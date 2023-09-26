@@ -6,7 +6,7 @@ class TodoList:
         self.todos.append(todo)
     
     def incomplete(self):
-        return [task for task in self.todos if not task.mark_complete()]
+        return [task for task in self.todos if not task.complete]
 
     def complete(self):
         # Returns:
