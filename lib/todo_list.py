@@ -9,13 +9,8 @@ class TodoList:
         return [task for task in self.todos if not task.complete]
 
     def complete(self):
-        # Returns:
-        #   A list of Todo instances representing the todos that are complete
-        pass
+        return [task for task in self.todos if task.complete]
 
     def give_up(self):
-        # Returns:
-        #   Nothing
-        # Side-effects:
-        #   Marks all todos as complete
-        pass
+        for task in self.todos:
+            task.mark_complete()
